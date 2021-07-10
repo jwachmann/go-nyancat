@@ -37,7 +37,7 @@ func termSize() (int, int) {
 }
 
 func playAudio() {
-	audio, _ := filepath.Abs("assets/audio.mp3")
+	audio, _ := filepath.Abs("nyancat-audio.mp3")
 	cmd := exec.Command("mpg123", "-loop 0", "-q", audio)
 	cmd.Start()
 }
@@ -81,7 +81,7 @@ func main() {
 	}
 
 	// Import frames from data file
-	framesFile, _ := filepath.Abs("assets/frames.json")
+	framesFile, _ := filepath.Abs("nyancat-frames.json")
 	data, _ := ioutil.ReadFile(framesFile)
 
 	var frames [][]string
