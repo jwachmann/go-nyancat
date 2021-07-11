@@ -1,1 +1,1 @@
-module github.com/NARKOZ/go-nyancat
+module github.com/jwachmann/go-nyancat
